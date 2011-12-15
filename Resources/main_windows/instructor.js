@@ -10,7 +10,7 @@ function setData(){
 	var dataArray = [];
 	
 	while(rows.isValidRow()){
-		dataArray.push({title:'' + rows.fieldByName('name') + '', hasChild:true, path:'../main_windows/exersizes.js', inID:'' + rows.fieldByName('ID') +''});
+		dataArray.push({title:'' + rows.fieldByName('iName') + '', hasChild:true, path:'../main_windows/exersizes.js', inID:'' + rows.fieldByName('iID') +''});
 		rows.next();
 	}
 	// set the array to the tableView

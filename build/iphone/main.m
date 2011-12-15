@@ -11,7 +11,7 @@ NSString * const TI_APPLICATION_DEPLOYTYPE = @"development";
 NSString * const TI_APPLICATION_ID = @"com.test.project";
 NSString * const TI_APPLICATION_PUBLISHER = @"helen.watson";
 NSString * const TI_APPLICATION_URL = @"http://";
-NSString * const TI_APPLICATION_NAME = @"TestDBProject";
+NSString * const TI_APPLICATION_NAME = @"TopnotchTRX";
 NSString * const TI_APPLICATION_VERSION = @"1.0";
 NSString * const TI_APPLICATION_DESCRIPTION = @"not specified";
 NSString * const TI_APPLICATION_COPYRIGHT = @"2011 by helen.watson";
@@ -19,7 +19,7 @@ NSString * const TI_APPLICATION_GUID = @"34baf93b-35cc-4455-b694-7512fed3534a";
 BOOL const TI_APPLICATION_ANALYTICS = true;
 
 #ifdef TARGET_IPHONE_SIMULATOR
-NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/helen.watson/Dropbox/TestDBProject/Resources";
+NSString * const TI_APPLICATION_RESOURCE_DIR = @"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/Resources";
 #endif
 
 int main(int argc, char *argv[]) {

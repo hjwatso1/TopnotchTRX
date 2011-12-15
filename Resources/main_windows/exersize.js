@@ -6,13 +6,13 @@ function setData(){
 	
 	var exersizeID = Ti.UI.currentWindow.exersizeID;
 	
-	var rows = db.execute('SELECT * FROM exersize WHERE ID='+exersizeID);
+	var rows = db.execute('SELECT * FROM exersize WHERE eID='+exersizeID);
 	
 	// create the array
 	var dataArray = [];
 	
 	while(rows.isValidRow()){
-		dataArray.push({title:'' + rows.fieldByName('exersize') + '', details:'' + rows.fieldByName('details') + '', hasChild:false});
+		dataArray.push({title:'' + rows.fieldByName('eName') + '', details:'' + rows.fieldByName('eDetails') + '', hasChild:false});
 		rows.next();
 	}
 	// set the array to the tableView
