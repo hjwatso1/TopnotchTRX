@@ -5,7 +5,7 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
-Starting build at 12/15/11 23:23
+Starting build at 12/16/11 11:21
 
 Build details:
 
@@ -18,21 +18,21 @@ Script arguments:
    /Library/Application Support/Titanium/mobilesdk/osx/1.7.5/iphone/builder.py
    simulator
    4.3
-   /Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX
+   /Users/helen.watson/Dropbox/TestDBProject
    com.test.project
    TopnotchTRX
    iphone
    iphone
-   192.168.0.8:57298
+   10.37.129.2:53452
 
 Building from: /Library/Application Support/Titanium/mobilesdk/osx/1.7.5/iphone
-Platform: Darwin Kernel Version 10.8.0: Tue Jun  7 16:33:36 PDT 2011; root:xnu-1504.15.3~1/RELEASE_I386
+Platform: Darwin Kernel Version 10.8.0: Tue Jun  7 16:32:41 PDT 2011; root:xnu-1504.15.3~1/RELEASE_X86_64
 
 Xcode path is: /Developer
 
 
 githash=ab20af7, existing_git_hash=ab20af7
-writing contents of /Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/project.xcconfig:
+writing contents of /Users/helen.watson/Dropbox/TestDBProject/build/iphone/project.xcconfig:
 
 TI_VERSION=1.7.5
 TI_SDK_DIR=/Library/Application Support/Titanium/mobilesdk/osx/$(TI_VERSION)/iphone
@@ -84,7 +84,7 @@ Starting Xcode compile with the following arguments:
     -configuration
     Debug
     -sdk
-    iphonesimulator5.0
+    iphonesimulator4.3
     GCC_PREPROCESSOR_DEFINITIONS=__LOG__ID__=34baf93b-35cc-4455-b694-7512fed3534a DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.5 DEBUGGER_ENABLED=1
     IPHONEOS_DEPLOYMENT_TARGET=3.1
     TARGETED_DEVICE_FAMILY=1
@@ -95,33 +95,34 @@ app_id = com.test.project
 Build settings from command line:
     GCC_PREPROCESSOR_DEFINITIONS = __LOG__ID__=34baf93b-35cc-4455-b694-7512fed3534a DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.5 DEBUGGER_ENABLED=1
     IPHONEOS_DEPLOYMENT_TARGET = 3.1
-    SDKROOT = iphonesimulator5.0
+    PLATFORM_NAME = iphonesimulator
+    SDKROOT = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
     TARGETED_DEVICE_FAMILY = 1
+
 
 === BUILD NATIVE TARGET TopnotchTRX OF PROJECT TopnotchTRX WITH CONFIGURATION Debug ===
 Check dependencies
-
 ProcessInfoPlistFile build/Debug-iphonesimulator/TopnotchTRX.app/Info.plist Info.plist
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    builtin-infoPlistUtility Info.plist -genpkginfo "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/Info.plist"
+    builtin-infoPlistUtility Info.plist -genpkginfo /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/Info.plist
 
 CopyPlistFile build/Debug-iphonesimulator/TopnotchTRX.app/stylesheet.plist Resources/stylesheet.plist
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    builtin-copyPlist --convert binary1 --outdir "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app" -- Resources/stylesheet.plist
+    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 Resources/stylesheet.plist --outdir /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
 
 CopyPlistFile build/Debug-iphonesimulator/TopnotchTRX.app/debugger.plist Resources/debugger.plist
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    builtin-copyPlist --convert binary1 --outdir "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app" -- Resources/debugger.plist
+    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copyplist --convert binary1 Resources/debugger.plist --outdir /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
 
 PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Script-241EAF36118E30260081A5BE.sh
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv ACTION build
-    setenv ALTERNATE_GROUP staff
+    setenv ALTERNATE_GROUP "CIMEX\\domain users"
     setenv ALTERNATE_MODE u+w,go-w,a+rX
-    setenv ALTERNATE_OWNER helenwatson
+    setenv ALTERNATE_OWNER helen.watson
     setenv ALWAYS_SEARCH_USER_PATHS NO
     setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer
     setenv APPLE_INTERNAL_DIR /AppleInternal
@@ -132,28 +133,27 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv ARCHS i386
     setenv ARCHS_STANDARD_32_BIT i386
     setenv ARCHS_UNIVERSAL_IPHONE_OS i386
-    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"
     setenv BUILD_COMPONENTS "headers build"
-    setenv BUILD_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
-    setenv BUILD_ROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
-    setenv BUILD_STYLE 
+    setenv BUILD_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
+    setenv BUILD_ROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
+    setenv BUILD_STYLE Debug
     setenv BUILD_VARIANTS normal
-    setenv BUILT_PRODUCTS_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
-    setenv CACHE_ROOT /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501
-    setenv CCHROOT /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501
+    setenv BUILT_PRODUCTS_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
+    setenv CACHE_ROOT /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912
+    setenv CCHROOT /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912
     setenv CHMOD /bin/chmod
     setenv CHOWN /usr/sbin/chown
-    setenv CLASS_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/JavaClasses"
+    setenv CLASS_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/JavaClasses
     setenv CLEAN_PRECOMPS YES
     setenv CLONE_HEADERS NO
-    setenv CODESIGNING_FOLDER_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app"
+    setenv CODESIGNING_FOLDER_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
     setenv CODE_SIGN_IDENTITY "iPhone Developer"
     setenv COMMAND_MODE legacy
-    setenv COMPOSITE_SDK_DIRS /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs
+    setenv COMPOSITE_SDK_DIRS /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912/CompositeSDKs
     setenv COMPRESS_PNG_FILES YES
     setenv CONFIGURATION Debug
-    setenv CONFIGURATION_BUILD_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
-    setenv CONFIGURATION_TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator"
+    setenv CONFIGURATION_BUILD_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
+    setenv CONFIGURATION_TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator
     setenv CONTENTS_FOLDER_PATH TopnotchTRX.app
     setenv COPYING_PRESERVES_HFS_DATA NO
     setenv COPY_PHASE_STRIP NO
@@ -164,12 +164,11 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv DEAD_CODE_STRIPPING NO
     setenv DEBUGGING_SYMBOLS YES
     setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym
-    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0
     setenv DEPLOYMENT_LOCATION NO
     setenv DEPLOYMENT_POSTPROCESSING NO
-    setenv DERIVED_FILES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources"
-    setenv DERIVED_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources"
-    setenv DERIVED_SOURCES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources"
+    setenv DERIVED_FILES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources
+    setenv DERIVED_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources
+    setenv DERIVED_SOURCES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources
     setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications
     setenv DEVELOPER_BIN_DIR /Developer/usr/bin
     setenv DEVELOPER_DIR /Developer
@@ -184,22 +183,21 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv DO_HEADER_SCANNING_IN_JAM NO
     setenv DSTROOT /tmp/TopnotchTRX.dst
     setenv DWARF_DSYM_FILE_NAME TopnotchTRX.app.dSYM
-    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO
-    setenv DWARF_DSYM_FOLDER_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
+    setenv DWARF_DSYM_FOLDER_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
     setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator
     setenv ENABLE_HEADER_DEPENDENCIES YES
     setenv ENABLE_OPENMP_SUPPORT NO
-    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"
-    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"
+    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"
+    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"
     setenv EXECUTABLES_FOLDER_PATH TopnotchTRX.app/Executables
     setenv EXECUTABLE_FOLDER_PATH TopnotchTRX.app
     setenv EXECUTABLE_NAME TopnotchTRX
     setenv EXECUTABLE_PATH TopnotchTRX.app/TopnotchTRX
-    setenv FILE_LIST "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects/LinkFileList"
-    setenv FIXED_FILES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/FixedFiles"
+    setenv FILE_LIST /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects/LinkFileList
+    setenv FIXED_FILES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/FixedFiles
     setenv FRAMEWORKS_FOLDER_PATH TopnotchTRX.app/Frameworks
     setenv FRAMEWORK_FLAG_PREFIX -framework
-    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator\" "
+    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator\" "
     setenv FRAMEWORK_VERSION A
     setenv FULL_PRODUCT_NAME TopnotchTRX.app
     setenv GCC3_VERSION 3.3
@@ -215,7 +213,7 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv GCC_PREPROCESSOR_DEFINITIONS "__LOG__ID__=34baf93b-35cc-4455-b694-7512fed3534a DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.5 DEBUGGER_ENABLED=1"
     setenv GCC_SYMBOLS_PRIVATE_EXTERN YES
     setenv GCC_TREAT_WARNINGS_AS_ERRORS NO
-    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0
+    setenv GCC_VERSION 4.2
     setenv GCC_WARN_ABOUT_RETURN_TYPE NO
     setenv GCC_WARN_MISSING_PARENTHESES NO
     setenv GCC_WARN_SHADOW NO
@@ -227,13 +225,13 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv GENERATE_MASTER_OBJECT_FILE NO
     setenv GENERATE_PKGINFO_FILE YES
     setenv GENERATE_PROFILING_CODE NO
-    setenv GID 20
-    setenv GROUP staff
+    setenv GID 1033642126
+    setenv GROUP "CIMEX\\domain users"
     setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES
     setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES
     setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES
     setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES
-    setenv HEADER_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2 headers"
+    setenv HEADER_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 headers"
     setenv ICONV /usr/bin/iconv
     setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES
     setenv INFOPLIST_FILE Info.plist
@@ -242,9 +240,9 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv INFOPLIST_PREPROCESS NO
     setenv INFOSTRINGS_PATH TopnotchTRX.app/English.lproj/InfoPlist.strings
     setenv INSTALL_DIR /tmp/TopnotchTRX.dst/Applications
-    setenv INSTALL_GROUP staff
+    setenv INSTALL_GROUP "CIMEX\\domain users"
     setenv INSTALL_MODE_FLAG u+w,go-w,a+rX
-    setenv INSTALL_OWNER helenwatson
+    setenv INSTALL_OWNER helen.watson
     setenv INSTALL_PATH /Applications
     setenv INSTALL_ROOT /tmp/TopnotchTRX.dst
     setenv IPHONEOS_DEPLOYMENT_TARGET 3.1
@@ -262,16 +260,14 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"
     setenv KEEP_PRIVATE_EXTERNS NO
     setenv LD_GENERATE_MAP_FILE NO
-    setenv LD_MAP_FILE_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-LinkMap-normal-i386.txt"
-    setenv LD_NO_PIE NO
+    setenv LD_MAP_FILE_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-LinkMap-normal-i386.txt
     setenv LD_OPENMP_FLAGS -fopenmp
-    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer
     setenv LEX /Developer/usr/bin/lex
     setenv LIBRARY_FLAG_NOSPACE YES
     setenv LIBRARY_FLAG_PREFIX -l
-    setenv LIBRARY_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator\"  \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/lib\" \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/debug/build\" \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator\" \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator\""
+    setenv LIBRARY_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator\"  \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib\" \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/debug/build\" \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator\" \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator\""
     setenv LINKER_DISPLAYS_MANGLED_NAMES NO
-    setenv LINK_FILE_LIST_normal_i386 "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/TopnotchTRX.LinkFileList"
+    setenv LINK_FILE_LIST_normal_i386 /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/TopnotchTRX.LinkFileList
     setenv LINK_WITH_STANDARD_LIBRARIES YES
     setenv LOCALIZED_RESOURCES_FOLDER_PATH TopnotchTRX.app/English.lproj
     setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities
@@ -290,9 +286,9 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv NATIVE_ARCH_ACTUAL x86_64
     setenv NO_COMMON YES
     setenv OBJC_ABI_VERSION 2
-    setenv OBJECT_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects"
-    setenv OBJECT_FILE_DIR_normal "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal"
-    setenv OBJROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
+    setenv OBJECT_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects
+    setenv OBJECT_FILE_DIR_normal /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal
+    setenv OBJROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
     setenv ONLY_ACTIVE_ARCH NO
     setenv OPTIMIZATION_LEVEL 0
     setenv OS MACOS
@@ -306,73 +302,72 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"
     setenv PBDEVELOPMENTPLIST_PATH TopnotchTRX.app/pbdevelopment.plist
     setenv PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
-    setenv PKGINFO_FILE_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PkgInfo"
+    setenv PKGINFO_FILE_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PkgInfo
     setenv PKGINFO_PATH TopnotchTRX.app/PkgInfo
     setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications
     setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin
-    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library
+    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library
     setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs
     setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools
     setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr
     setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform
     setenv PLATFORM_NAME iphonesimulator
-    setenv PLATFORM_PREFERRED_ARCH i386
-    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334
-    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50000
+    setenv PLATFORM_PRODUCT_BUILD_VERSION 8F192
+    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 40300
     setenv PLIST_FILE_OUTPUT_FORMAT binary
     setenv PLUGINS_FOLDER_PATH TopnotchTRX.app/PlugIns
     setenv PREBINDING NO
     setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES
-    setenv PRECOMP_DESTINATION_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PrefixHeaders"
+    setenv PRECOMP_DESTINATION_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PrefixHeaders
     setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO
     setenv PRIVATE_HEADERS_FOLDER_PATH TopnotchTRX.app/PrivateHeaders
     setenv PRODUCT_NAME TopnotchTRX
-    setenv PRODUCT_SETTINGS_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/Info.plist"
+    setenv PRODUCT_SETTINGS_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/Info.plist
     setenv PRODUCT_TYPE com.apple.product-type.application
     setenv PROFILING_CODE NO
     setenv PROJECT TopnotchTRX
-    setenv PROJECT_DERIVED_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/DerivedSources"
-    setenv PROJECT_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
-    setenv PROJECT_FILE_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/TopnotchTRX.xcodeproj"
+    setenv PROJECT_DERIVED_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/DerivedSources
+    setenv PROJECT_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone
+    setenv PROJECT_FILE_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/TopnotchTRX.xcodeproj
     setenv PROJECT_NAME TopnotchTRX
-    setenv PROJECT_TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build"
+    setenv PROJECT_TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build
     setenv PUBLIC_HEADERS_FOLDER_PATH TopnotchTRX.app/Headers
     setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES
     setenv REMOVE_CVS_FROM_RESOURCES YES
     setenv REMOVE_GIT_FROM_RESOURCES YES
-    setenv REMOVE_HG_FROM_RESOURCES YES
     setenv REMOVE_SVN_FROM_RESOURCES YES
-    setenv REZ_COLLECTOR_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources"
-    setenv REZ_OBJECTS_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources/Objects"
-    setenv REZ_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator\" "
+    setenv REZ_COLLECTOR_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources
+    setenv REZ_OBJECTS_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources/Objects
+    setenv REZ_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator\" "
     setenv RUN_CLANG_STATIC_ANALYZER NO
     setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO
     setenv SCRIPTS_FOLDER_PATH TopnotchTRX.app/Scripts
     setenv SCRIPT_INPUT_FILE_COUNT 0
     setenv SCRIPT_OUTPUT_FILE_COUNT 0
-    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
-    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
-    setenv SDK_NAME iphonesimulator5.0
-    setenv SDK_PRODUCT_BUILD_VERSION 9A334
+    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+    setenv SDK_NAME iphonesimulator4.3
+    setenv SDK_PRODUCT_BUILD_VERSION 8F192
     setenv SED /usr/bin/sed
     setenv SEPARATE_STRIP NO
     setenv SEPARATE_SYMBOL_EDIT NO
     setenv SET_DIR_MODE_OWNER_GROUP YES
     setenv SET_FILE_MODE_OWNER_GROUP NO
     setenv SHALLOW_BUNDLE YES
-    setenv SHARED_DERIVED_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/DerivedSources"
+    setenv SHARED_DERIVED_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/DerivedSources
     setenv SHARED_FRAMEWORKS_FOLDER_PATH TopnotchTRX.app/SharedFrameworks
-    setenv SHARED_PRECOMPS_DIR /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders
+    setenv SHARED_PRECOMPS_DIR /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912/SharedPrecompiledHeaders
     setenv SHARED_SUPPORT_FOLDER_PATH TopnotchTRX.app/SharedSupport
-    setenv SKIP_INSTALL NO
-    setenv SOURCE_ROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
-    setenv SRCROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    setenv SKIP_INSTALL YES
+    setenv SOURCE_ROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone
+    setenv SRCROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone
+    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic
     setenv STRINGS_FILE_OUTPUT_ENCODING binary
     setenv STRIP_INSTALLED_PRODUCT YES
     setenv STRIP_STYLE all
     setenv SUPPORTED_DEVICE_FAMILIES "1 2"
-    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"
-    setenv SYMROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
+    setenv SYMBOL_REPOSITORY_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/SymbolRepositories
+    setenv SYMROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
     setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities
     setenv SYSTEM_APPS_DIR /Applications
     setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices
@@ -395,23 +390,22 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv SYSTEM_LIBRARY_DIR /System/Library
     setenv TARGETED_DEVICE_FAMILY 1
     setenv TARGETNAME TopnotchTRX
-    setenv TARGET_BUILD_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
+    setenv TARGET_BUILD_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
     setenv TARGET_NAME TopnotchTRX
-    setenv TARGET_TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_FILES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_ROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
-    setenv TEST_AFTER_BUILD YES
+    setenv TARGET_TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_FILES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_ROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
     setenv TI_APPID com.test.project
     setenv TI_SDK_DIR "/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/iphone"
     setenv TI_VERSION 1.7.5
-    setenv UID 501
+    setenv UID 1449201912
     setenv UNLOCALIZED_RESOURCES_FOLDER_PATH TopnotchTRX.app
     setenv UNSTRIPPED_PRODUCT NO
-    setenv USER helenwatson
-    setenv USER_APPS_DIR /Users/helenwatson/Applications
-    setenv USER_LIBRARY_DIR /Users/helenwatson/Library
+    setenv USER helen.watson
+    setenv USER_APPS_DIR /Users/helen.watson/Applications
+    setenv USER_LIBRARY_DIR /Users/helen.watson/Library
     setenv USE_DYNAMIC_NO_PIC YES
     setenv USE_HEADERMAP YES
     setenv USE_HEADER_SYMLINKS NO
@@ -419,54 +413,83 @@ PhaseScriptExecution Pre-Compile build/TopnotchTRX.build/Debug-iphonesimulator/T
     setenv VALID_ARCHS i386
     setenv VERBOSE_PBXCP NO
     setenv VERSIONPLIST_PATH TopnotchTRX.app/version.plist
-    setenv VERSION_INFO_BUILDER helenwatson
+    setenv VERSION_INFO_BUILDER helen.watson
     setenv VERSION_INFO_FILE TopnotchTRX_vers.c
     setenv VERSION_INFO_STRING "\"@(#)PROGRAM:TopnotchTRX  PROJECT:TopnotchTRX-\""
     setenv WRAPPER_EXTENSION app
     setenv WRAPPER_NAME TopnotchTRX.app
     setenv WRAPPER_SUFFIX .app
     setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
-    setenv XCODE_PRODUCT_BUILD_VERSION 4C199
-    setenv XCODE_VERSION_ACTUAL 0420
+    setenv XCODE_PRODUCT_BUILD_VERSION 10M2518
+    setenv XCODE_VERSION_ACTUAL 0400
     setenv XCODE_VERSION_MAJOR 0400
-    setenv XCODE_VERSION_MINOR 0420
+    setenv XCODE_VERSION_MINOR 0400
     setenv YACC /Developer/usr/bin/yacc
-    /bin/sh -c "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Script-241EAF36118E30260081A5BE.sh\""
+    /bin/sh -c /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Script-241EAF36118E30260081A5BE.sh
+
 [INFO] One moment, building ...
-[DEBUG] Detecting modules in /Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/modules
+[DEBUG] Detecting modules in /Users/helen.watson/Dropbox/TestDBProject/modules
 [DEBUG] Detecting modules in /Library/Application Support/Titanium/modules
 [INFO] Titanium SDK version: 1.7.5
 [INFO] iPhone Device family: iphone
-[INFO] iPhone SDK version: 5.0
-[DEBUG] copy resources from /Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/Resources/iphone to /Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
+[INFO] iPhone SDK version: 4.3
+[DEBUG] copy resources from /Users/helen.watson/Dropbox/TestDBProject/Resources/iphone to /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
 [INFO] Skipping JS compile, running from simulator
-
-CompileC build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+CompileC build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/main.o main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv LANG en_US.US-ASCII
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wno-return-type -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-shorten-64-to-32 -D__LOG__ID__=34baf93b-35cc-4455-b694-7512fed3534a -DDEPLOYTYPE=development -DTI_DEVELOPMENT=1 -DDEBUG=1 -DTI_VERSION=1.7.5 -DDEBUGGER_ENABLED=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-generated-files.hmap" "-I/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-own-target-headers.hmap" "-I/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-all-target-headers.hmap" -iquote "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-project-headers.hmap" "-I/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/include" -I/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources/i386" "-I/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources" "-F/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator" -DDEBUG -DTI_POST_1_2 -include /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TopnotchTRX_Prefix-arpbhwcaeegvupcqwcfxurrxsjsn/TopnotchTRX_Prefix.pch -MMD -MT dependencies -MF "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/main.d" -c "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/main.m" -o "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/main.o"
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wunused-function -D__LOG__ID__=34baf93b-35cc-4455-b694-7512fed3534a -DDEPLOYTYPE=development -DTI_DEVELOPMENT=1 -DDEBUG=1 -DTI_VERSION=1.7.5 -DDEBUGGER_ENABLED=1 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -iquote /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-generated-files.hmap -I/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-own-target-headers.hmap -I/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-all-target-headers.hmap -iquote /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-project-headers.hmap -F/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator -I/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/include -I/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 -Iheaders -I/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources/i386 -I/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources -DDEBUG -DTI_POST_1_2 -include /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912/SharedPrecompiledHeaders/TopnotchTRX_Prefix-dmnqgefkrszsrogypojrjmduiyfh/TopnotchTRX_Prefix.pch -c /Users/helen.watson/Dropbox/TestDBProject/build/iphone/main.m -o /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/main.o
 
 Ld build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX normal i386
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv MACOSX_DEPLOYMENT_TARGET 10.6
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/clang++ -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk "-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator" "-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/lib" "-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/debug/build" "-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator" "-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator" "-F/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator" -filelist "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/TopnotchTRX.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -ObjC -weak-lSystem -weak_framework iAd -weak_framework iAd -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=30100 -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework CFNetwork -framework CoreLocation -framework MapKit -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -lsqlite3 -lz -framework AudioToolbox -weak_framework MediaPlayer -framework AVFoundation -lxml2 -framework StoreKit -lTiCore -framework ExternalAccessory -ltiverify -lti_ios_debugger -o "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX"
-ld: warning: directory not found for option '-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/debug/build'
-ld: warning: directory not found for option '-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator'
-ld: warning: directory not found for option '-L/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator'
+    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator -L/Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib -L/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/debug/build -L/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator -L/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator -F/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator -filelist /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/TopnotchTRX.LinkFileList -mmacosx-version-min=10.6 -ObjC -weak-lSystem -weak_framework iAd -weak_framework iAd -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -weak_framework UIKit -framework CoreGraphics -framework AddressBook -framework AddressBookUI -framework CFNetwork -framework CoreLocation -framework MapKit -framework MessageUI -framework MobileCoreServices -framework OpenGLES -framework QuartzCore -framework SystemConfiguration -lsqlite3 -lz -framework AudioToolbox -weak_framework MediaPlayer -framework AVFoundation -lxml2 -framework StoreKit -lTiCore -framework ExternalAccessory -ltiverify -lti_ios_debugger -o /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX
 
+ld: warning: directory '/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/debug/build' following -L not found
+ld: warning: directory '/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator' following -L not found
+ld: warning: directory '/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator' following -L not found
+ld: warning: TI::TiCell::isAPIValueWrapper() consthas different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::isPropertyNameIterator() consthas different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::markChildren(TI::MarkStack&)     has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::isAPIValueWrapper() const has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::~TiAPIValueWrapper()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::~TiAPIValueWrapper()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::isAPIValueWrapper() consthas different visibility (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebuggerCallFrame.o) and (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o)
+ld: warning: TI::TiCell::isPropertyNameIterator() consthas different visibility (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebuggerCallFrame.o) and (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o)
+ld: warning: TI::TiCell::markChildren(TI::MarkStack&)     has different visibility (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebuggerCallFrame.o) and (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebuggerCallFrame.o) and (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiValueRef.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiCell.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiObjectRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::isAPIValueWrapper() const has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiObjectRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::~TiAPIValueWrapper()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiObjectRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiBase.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::isAPIValueWrapper() const has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiBase.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiContextRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::isAPIValueWrapper() const has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiContextRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiStringRefCF.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(UString.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(Debugger.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiClassRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiAPIValueWrapper::isAPIValueWrapper() const has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiClassRef.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(Structure.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(Executable.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(TiObject.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
+ld: warning: TI::TiCell::~TiCell()has different visibility (hidden) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libTiCore.a(FunctionConstructor.o) and (default) in /Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib/libti_ios_debugger.a(TiDebugger.o)
 GenerateDSYMFile build/Debug-iphonesimulator/TopnotchTRX.app.dSYM build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Developer/usr/bin/dsymutil "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX" -o "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app.dSYM"
+    /Developer/usr/bin/dsymutil /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX -o /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app.dSYM
 
 PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Script-24CA8D03111169070084E2DE.sh
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv ACTION build
-    setenv ALTERNATE_GROUP staff
+    setenv ALTERNATE_GROUP "CIMEX\\domain users"
     setenv ALTERNATE_MODE u+w,go-w,a+rX
-    setenv ALTERNATE_OWNER helenwatson
+    setenv ALTERNATE_OWNER helen.watson
     setenv ALWAYS_SEARCH_USER_PATHS NO
     setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer
     setenv APPLE_INTERNAL_DIR /AppleInternal
@@ -477,28 +500,27 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv ARCHS i386
     setenv ARCHS_STANDARD_32_BIT i386
     setenv ARCHS_UNIVERSAL_IPHONE_OS i386
-    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"
     setenv BUILD_COMPONENTS "headers build"
-    setenv BUILD_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
-    setenv BUILD_ROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
-    setenv BUILD_STYLE 
+    setenv BUILD_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
+    setenv BUILD_ROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
+    setenv BUILD_STYLE Debug
     setenv BUILD_VARIANTS normal
-    setenv BUILT_PRODUCTS_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
-    setenv CACHE_ROOT /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501
-    setenv CCHROOT /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501
+    setenv BUILT_PRODUCTS_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
+    setenv CACHE_ROOT /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912
+    setenv CCHROOT /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912
     setenv CHMOD /bin/chmod
     setenv CHOWN /usr/sbin/chown
-    setenv CLASS_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/JavaClasses"
+    setenv CLASS_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/JavaClasses
     setenv CLEAN_PRECOMPS YES
     setenv CLONE_HEADERS NO
-    setenv CODESIGNING_FOLDER_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app"
+    setenv CODESIGNING_FOLDER_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
     setenv CODE_SIGN_IDENTITY "iPhone Developer"
     setenv COMMAND_MODE legacy
-    setenv COMPOSITE_SDK_DIRS /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs
+    setenv COMPOSITE_SDK_DIRS /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912/CompositeSDKs
     setenv COMPRESS_PNG_FILES YES
     setenv CONFIGURATION Debug
-    setenv CONFIGURATION_BUILD_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
-    setenv CONFIGURATION_TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator"
+    setenv CONFIGURATION_BUILD_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
+    setenv CONFIGURATION_TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator
     setenv CONTENTS_FOLDER_PATH TopnotchTRX.app
     setenv COPYING_PRESERVES_HFS_DATA NO
     setenv COPY_PHASE_STRIP NO
@@ -509,12 +531,11 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv DEAD_CODE_STRIPPING NO
     setenv DEBUGGING_SYMBOLS YES
     setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym
-    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0
     setenv DEPLOYMENT_LOCATION NO
     setenv DEPLOYMENT_POSTPROCESSING NO
-    setenv DERIVED_FILES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources"
-    setenv DERIVED_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources"
-    setenv DERIVED_SOURCES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources"
+    setenv DERIVED_FILES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources
+    setenv DERIVED_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources
+    setenv DERIVED_SOURCES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/DerivedSources
     setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications
     setenv DEVELOPER_BIN_DIR /Developer/usr/bin
     setenv DEVELOPER_DIR /Developer
@@ -529,22 +550,21 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv DO_HEADER_SCANNING_IN_JAM NO
     setenv DSTROOT /tmp/TopnotchTRX.dst
     setenv DWARF_DSYM_FILE_NAME TopnotchTRX.app.dSYM
-    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO
-    setenv DWARF_DSYM_FOLDER_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
+    setenv DWARF_DSYM_FOLDER_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
     setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator
     setenv ENABLE_HEADER_DEPENDENCIES YES
     setenv ENABLE_OPENMP_SUPPORT NO
-    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"
-    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"
+    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"
+    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"
     setenv EXECUTABLES_FOLDER_PATH TopnotchTRX.app/Executables
     setenv EXECUTABLE_FOLDER_PATH TopnotchTRX.app
     setenv EXECUTABLE_NAME TopnotchTRX
     setenv EXECUTABLE_PATH TopnotchTRX.app/TopnotchTRX
-    setenv FILE_LIST "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects/LinkFileList"
-    setenv FIXED_FILES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/FixedFiles"
+    setenv FILE_LIST /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects/LinkFileList
+    setenv FIXED_FILES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/FixedFiles
     setenv FRAMEWORKS_FOLDER_PATH TopnotchTRX.app/Frameworks
     setenv FRAMEWORK_FLAG_PREFIX -framework
-    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator\" "
+    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator\" "
     setenv FRAMEWORK_VERSION A
     setenv FULL_PRODUCT_NAME TopnotchTRX.app
     setenv GCC3_VERSION 3.3
@@ -560,7 +580,7 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv GCC_PREPROCESSOR_DEFINITIONS "__LOG__ID__=34baf93b-35cc-4455-b694-7512fed3534a DEPLOYTYPE=development TI_DEVELOPMENT=1 DEBUG=1 TI_VERSION=1.7.5 DEBUGGER_ENABLED=1"
     setenv GCC_SYMBOLS_PRIVATE_EXTERN YES
     setenv GCC_TREAT_WARNINGS_AS_ERRORS NO
-    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0
+    setenv GCC_VERSION 4.2
     setenv GCC_WARN_ABOUT_RETURN_TYPE NO
     setenv GCC_WARN_MISSING_PARENTHESES NO
     setenv GCC_WARN_SHADOW NO
@@ -572,13 +592,13 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv GENERATE_MASTER_OBJECT_FILE NO
     setenv GENERATE_PKGINFO_FILE YES
     setenv GENERATE_PROFILING_CODE NO
-    setenv GID 20
-    setenv GROUP staff
+    setenv GID 1033642126
+    setenv GROUP "CIMEX\\domain users"
     setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES
     setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES
     setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES
     setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES
-    setenv HEADER_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk/usr/include/libxml2 headers"
+    setenv HEADER_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/include\" /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/libxml2 headers"
     setenv ICONV /usr/bin/iconv
     setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES
     setenv INFOPLIST_FILE Info.plist
@@ -587,9 +607,9 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv INFOPLIST_PREPROCESS NO
     setenv INFOSTRINGS_PATH TopnotchTRX.app/English.lproj/InfoPlist.strings
     setenv INSTALL_DIR /tmp/TopnotchTRX.dst/Applications
-    setenv INSTALL_GROUP staff
+    setenv INSTALL_GROUP "CIMEX\\domain users"
     setenv INSTALL_MODE_FLAG u+w,go-w,a+rX
-    setenv INSTALL_OWNER helenwatson
+    setenv INSTALL_OWNER helen.watson
     setenv INSTALL_PATH /Applications
     setenv INSTALL_ROOT /tmp/TopnotchTRX.dst
     setenv IPHONEOS_DEPLOYMENT_TARGET 3.1
@@ -607,16 +627,14 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"
     setenv KEEP_PRIVATE_EXTERNS NO
     setenv LD_GENERATE_MAP_FILE NO
-    setenv LD_MAP_FILE_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-LinkMap-normal-i386.txt"
-    setenv LD_NO_PIE NO
+    setenv LD_MAP_FILE_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/TopnotchTRX-LinkMap-normal-i386.txt
     setenv LD_OPENMP_FLAGS -fopenmp
-    setenv LEGACY_DEVELOPER_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer
     setenv LEX /Developer/usr/bin/lex
     setenv LIBRARY_FLAG_NOSPACE YES
     setenv LIBRARY_FLAG_PREFIX -l
-    setenv LIBRARY_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator\"  \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/lib\" \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/debug/build\" \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator\" \"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator\""
+    setenv LIBRARY_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator\"  \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/lib\" \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/debug/build\" \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../../tmp/staticlib/build/Debug-iphonesimulator\" \"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/../../../tijs/TiCore/TiCore/build/Release-iphonesimulator\""
     setenv LINKER_DISPLAYS_MANGLED_NAMES NO
-    setenv LINK_FILE_LIST_normal_i386 "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/TopnotchTRX.LinkFileList"
+    setenv LINK_FILE_LIST_normal_i386 /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal/i386/TopnotchTRX.LinkFileList
     setenv LINK_WITH_STANDARD_LIBRARIES YES
     setenv LOCALIZED_RESOURCES_FOLDER_PATH TopnotchTRX.app/English.lproj
     setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities
@@ -635,9 +653,9 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv NATIVE_ARCH_ACTUAL x86_64
     setenv NO_COMMON YES
     setenv OBJC_ABI_VERSION 2
-    setenv OBJECT_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects"
-    setenv OBJECT_FILE_DIR_normal "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal"
-    setenv OBJROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
+    setenv OBJECT_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects
+    setenv OBJECT_FILE_DIR_normal /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Objects-normal
+    setenv OBJROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
     setenv ONLY_ACTIVE_ARCH NO
     setenv OPTIMIZATION_LEVEL 0
     setenv OS MACOS
@@ -651,73 +669,72 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"
     setenv PBDEVELOPMENTPLIST_PATH TopnotchTRX.app/pbdevelopment.plist
     setenv PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"
-    setenv PKGINFO_FILE_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PkgInfo"
+    setenv PKGINFO_FILE_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PkgInfo
     setenv PKGINFO_PATH TopnotchTRX.app/PkgInfo
     setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Applications
     setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin
-    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library/Xcode/PrivatePlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library
+    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Library
     setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs
     setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/Tools
     setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/usr
     setenv PLATFORM_DIR /Developer/Platforms/iPhoneSimulator.platform
     setenv PLATFORM_NAME iphonesimulator
-    setenv PLATFORM_PREFERRED_ARCH i386
-    setenv PLATFORM_PRODUCT_BUILD_VERSION 9A334
-    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 50000
+    setenv PLATFORM_PRODUCT_BUILD_VERSION 8F192
+    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 40300
     setenv PLIST_FILE_OUTPUT_FORMAT binary
     setenv PLUGINS_FOLDER_PATH TopnotchTRX.app/PlugIns
     setenv PREBINDING NO
     setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES
-    setenv PRECOMP_DESTINATION_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PrefixHeaders"
+    setenv PRECOMP_DESTINATION_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/PrefixHeaders
     setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO
     setenv PRIVATE_HEADERS_FOLDER_PATH TopnotchTRX.app/PrivateHeaders
     setenv PRODUCT_NAME TopnotchTRX
-    setenv PRODUCT_SETTINGS_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/Info.plist"
+    setenv PRODUCT_SETTINGS_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/Info.plist
     setenv PRODUCT_TYPE com.apple.product-type.application
     setenv PROFILING_CODE NO
     setenv PROJECT TopnotchTRX
-    setenv PROJECT_DERIVED_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/DerivedSources"
-    setenv PROJECT_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
-    setenv PROJECT_FILE_PATH "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/TopnotchTRX.xcodeproj"
+    setenv PROJECT_DERIVED_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/DerivedSources
+    setenv PROJECT_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone
+    setenv PROJECT_FILE_PATH /Users/helen.watson/Dropbox/TestDBProject/build/iphone/TopnotchTRX.xcodeproj
     setenv PROJECT_NAME TopnotchTRX
-    setenv PROJECT_TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build"
+    setenv PROJECT_TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build
     setenv PUBLIC_HEADERS_FOLDER_PATH TopnotchTRX.app/Headers
     setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES
     setenv REMOVE_CVS_FROM_RESOURCES YES
     setenv REMOVE_GIT_FROM_RESOURCES YES
-    setenv REMOVE_HG_FROM_RESOURCES YES
     setenv REMOVE_SVN_FROM_RESOURCES YES
-    setenv REZ_COLLECTOR_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources"
-    setenv REZ_OBJECTS_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources/Objects"
-    setenv REZ_SEARCH_PATHS "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator\" "
+    setenv REZ_COLLECTOR_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources
+    setenv REZ_OBJECTS_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/ResourceManagerResources/Objects
+    setenv REZ_SEARCH_PATHS "\"/Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator\" "
     setenv RUN_CLANG_STATIC_ANALYZER NO
     setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO
     setenv SCRIPTS_FOLDER_PATH TopnotchTRX.app/Scripts
     setenv SCRIPT_INPUT_FILE_COUNT 0
     setenv SCRIPT_OUTPUT_FILE_COUNT 0
-    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
-    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.0.sdk
-    setenv SDK_NAME iphonesimulator5.0
-    setenv SDK_PRODUCT_BUILD_VERSION 9A334
+    setenv SDKROOT /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+    setenv SDK_DIR /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+    setenv SDK_NAME iphonesimulator4.3
+    setenv SDK_PRODUCT_BUILD_VERSION 8F192
     setenv SED /usr/bin/sed
     setenv SEPARATE_STRIP NO
     setenv SEPARATE_SYMBOL_EDIT NO
     setenv SET_DIR_MODE_OWNER_GROUP YES
     setenv SET_FILE_MODE_OWNER_GROUP NO
     setenv SHALLOW_BUNDLE YES
-    setenv SHARED_DERIVED_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/DerivedSources"
+    setenv SHARED_DERIVED_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/DerivedSources
     setenv SHARED_FRAMEWORKS_FOLDER_PATH TopnotchTRX.app/SharedFrameworks
-    setenv SHARED_PRECOMPS_DIR /var/folders/Pl/PlVJtAKuFjGezMJJF0vRs++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders
+    setenv SHARED_PRECOMPS_DIR /var/folders/Ja/Ja2EyBKAEUqK8j29-ZSnCpNV2DU/-Caches-/com.apple.Xcode.1449201912/SharedPrecompiledHeaders
     setenv SHARED_SUPPORT_FOLDER_PATH TopnotchTRX.app/SharedSupport
-    setenv SKIP_INSTALL NO
-    setenv SOURCE_ROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
-    setenv SRCROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    setenv SKIP_INSTALL YES
+    setenv SOURCE_ROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone
+    setenv SRCROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone
+    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic
     setenv STRINGS_FILE_OUTPUT_ENCODING binary
     setenv STRIP_INSTALLED_PRODUCT YES
     setenv STRIP_STYLE all
     setenv SUPPORTED_DEVICE_FAMILIES "1 2"
-    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"
-    setenv SYMROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
+    setenv SYMBOL_REPOSITORY_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/SymbolRepositories
+    setenv SYMROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
     setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities
     setenv SYSTEM_APPS_DIR /Applications
     setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices
@@ -740,23 +757,22 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv SYSTEM_LIBRARY_DIR /System/Library
     setenv TARGETED_DEVICE_FAMILY 1
     setenv TARGETNAME TopnotchTRX
-    setenv TARGET_BUILD_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator"
+    setenv TARGET_BUILD_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator
     setenv TARGET_NAME TopnotchTRX
-    setenv TARGET_TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_FILES_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_FILE_DIR "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build"
-    setenv TEMP_ROOT "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build"
-    setenv TEST_AFTER_BUILD YES
+    setenv TARGET_TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_FILES_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_FILE_DIR /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build
+    setenv TEMP_ROOT /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build
     setenv TI_APPID com.test.project
     setenv TI_SDK_DIR "/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/iphone"
     setenv TI_VERSION 1.7.5
-    setenv UID 501
+    setenv UID 1449201912
     setenv UNLOCALIZED_RESOURCES_FOLDER_PATH TopnotchTRX.app
     setenv UNSTRIPPED_PRODUCT NO
-    setenv USER helenwatson
-    setenv USER_APPS_DIR /Users/helenwatson/Applications
-    setenv USER_LIBRARY_DIR /Users/helenwatson/Library
+    setenv USER helen.watson
+    setenv USER_APPS_DIR /Users/helen.watson/Applications
+    setenv USER_LIBRARY_DIR /Users/helen.watson/Library
     setenv USE_DYNAMIC_NO_PIC YES
     setenv USE_HEADERMAP YES
     setenv USE_HEADER_SYMLINKS NO
@@ -764,28 +780,27 @@ PhaseScriptExecution Post-Compile build/TopnotchTRX.build/Debug-iphonesimulator/
     setenv VALID_ARCHS i386
     setenv VERBOSE_PBXCP NO
     setenv VERSIONPLIST_PATH TopnotchTRX.app/version.plist
-    setenv VERSION_INFO_BUILDER helenwatson
+    setenv VERSION_INFO_BUILDER helen.watson
     setenv VERSION_INFO_FILE TopnotchTRX_vers.c
     setenv VERSION_INFO_STRING "\"@(#)PROGRAM:TopnotchTRX  PROJECT:TopnotchTRX-\""
     setenv WRAPPER_EXTENSION app
     setenv WRAPPER_NAME TopnotchTRX.app
     setenv WRAPPER_SUFFIX .app
     setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode
-    setenv XCODE_PRODUCT_BUILD_VERSION 4C199
-    setenv XCODE_VERSION_ACTUAL 0420
+    setenv XCODE_PRODUCT_BUILD_VERSION 10M2518
+    setenv XCODE_VERSION_ACTUAL 0400
     setenv XCODE_VERSION_MAJOR 0400
-    setenv XCODE_VERSION_MINOR 0420
+    setenv XCODE_VERSION_MINOR 0400
     setenv YACC /Developer/usr/bin/yacc
-    /bin/sh -c "\"/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Script-24CA8D03111169070084E2DE.sh\""
+    /bin/sh -c /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/TopnotchTRX.build/Debug-iphonesimulator/TopnotchTRX.build/Script-24CA8D03111169070084E2DE.sh
+
 post-compile
-
 Touch build/Debug-iphonesimulator/TopnotchTRX.app
-    cd "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone"
+    cd /Users/helen.watson/Dropbox/TestDBProject/build/iphone
     setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /usr/bin/touch -c "/Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app"
-
+    /usr/bin/touch -c /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app
 
 ** BUILD SUCCEEDED **
 
-+ Looking for application binary at /Users/helenwatson/Documents/Titanium Studio Workspace/TopnotchTRX/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX
++ Looking for application binary at /Users/helen.watson/Dropbox/TestDBProject/build/iphone/build/Debug-iphonesimulator/TopnotchTRX.app/TopnotchTRX
 Finishing build

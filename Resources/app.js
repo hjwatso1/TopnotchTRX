@@ -9,7 +9,7 @@ var tabGroup = Titanium.UI.createTabGroup();
 // create base UI tab and root window
 //
 var instructorWin = Titanium.UI.createWindow({  
-    title:'Exersizes',
+    title:'My Instructor',
     url:'main_windows/instructor.js',
     backgroundColor:'#fff'
 });

@@ -2,18 +2,18 @@ var win = Ti.UI.currentWindow;
 
 // get info from DB
 function setData(){
-	var db = Ti.Database.install('../topnotchtrx.sqlite', 'exersize');
+	var db = Titanium.Database.install('../topnotchtrx.sqlite', 'myDB');
 	
 	var instructorID = Ti.UI.currentWindow.instructorID;
 	
-	var rows = db.execute('SELECT * FROM exersize WHERE iID='+instructorID);
+	var exersizesRows = db.execute('SELECT * FROM exersize WHERE iID='+instructorID);
 	
 	// create the array
 	var dataArray = [];
 	
-	while(rows.isValidRow()){
-		dataArray.push({title:'' + rows.fieldByName('eName') + '', hasChild:true, path:'../main_windows/exersize.js', exID:'' + rows.fieldByName('iID') +''});
-		rows.next();
+	while(exersizesRows.isValidRow()){
+		dataArray.push({title:'' + exersizesRows.fieldByName('eName') + '', hasChild:true, path:'../main_windows/exersize.js', exID:'' + exersizesRows.fieldByName('eID') +''});
+		exersizesRows.next();
 	}
 	// set the array to the tableView
 	tableview.setData(dataArray);

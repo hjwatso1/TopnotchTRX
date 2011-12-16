@@ -2,7 +2,7 @@ var win = Ti.UI.currentWindow;
 
 // get info from DB
 function setData(){
-	var db = Ti.Database.install('../topnotchtrx.sqlite', 'instructor');
+	var db = Titanium.Database.install('../topnotchtrx.sqlite', 'myDB');
 	
 	var rows = db.execute('SELECT * FROM instructor');
 	

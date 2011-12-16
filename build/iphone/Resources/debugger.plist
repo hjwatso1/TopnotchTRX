@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>host</key>
-	<string>192.168.0.8</string>
+	<string>10.37.129.2</string>
 	<key>port</key>
-	<string>57298</string>
+	<string>53452</string>
 </dict>
 </plist>
