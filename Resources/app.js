@@ -9,14 +9,14 @@ var tabGroup = Titanium.UI.createTabGroup();
 // create base UI tab and root window
 //
 var instructorWin = Titanium.UI.createWindow({  
-    title:'My Instructor',
+    title:'Exersize with ...',
     url:'main_windows/instructor.js',
     backgroundColor:'#fff'
 });
 
 var tab1 = Titanium.UI.createTab({  
     icon:'KS_nav_views.png',
-    title:'My Instructor',
+    title:'Exersize with',
     window:instructorWin
 });
 
@@ -24,7 +24,7 @@ var tab1 = Titanium.UI.createTab({
 // create controls tab and root window
 //
 var worloutInstructor = Titanium.UI.createWindow({  
-    title:'Workouts',
+    title:'Workout with ...',
     backgroundColor:'#fff',
     url:'main_windows/workoutInstructor.js'
 });
@@ -34,15 +34,6 @@ var tab2 = Titanium.UI.createTab({
     title:'Workouts',
     window:worloutInstructor
 });
-
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
 
 //
 //  add tabs
