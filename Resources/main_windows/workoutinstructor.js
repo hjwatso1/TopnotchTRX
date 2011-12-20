@@ -4,18 +4,17 @@ var win = Ti.UI.currentWindow;
 function setData(){
 	var db = Titanium.Database.install('../topnotchtrx.sqlite', 'myDB');
 	
-	var rows = db.execute('SELECT * FROM instructor');
+	var rows = db.execute('SELECT * FROM instructors');
 	
 	// create the array
 	var dataArray = [];
 	
 	while(rows.isValidRow()){
-		dataArray.push({title:'' + rows.fieldByName('iName') + '', hasChild:true, path:'../main_windows/exersizes.js', inID:'' + rows.fieldByName('iID') +''});
+		dataArray.push({title:'' + rows.fieldByName('iName') + '', hasChild:true, path:'../main_windows/workoutList.js', inID:'' + rows.fieldByName('iID') +''});
 		rows.next();
 	}
 	// set the array to the tableView
 	tableview.setData(dataArray);
-	
 };
 
 var tableview = Ti.UI.createTableView({

@@ -6,7 +6,7 @@ function setData(){
 	
 	var exersizeID = Ti.UI.currentWindow.exersizeID;
 	
-	var exersizeRows = db.execute('SELECT * FROM exersize WHERE eID='+exersizeID);
+	var exersizeRows = db.execute('SELECT * FROM exersizes WHERE eID='+exersizeID);
 	
 	// create the array
 	var dataArray = [];

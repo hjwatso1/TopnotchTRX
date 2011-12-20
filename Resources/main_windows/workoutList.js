@@ -4,14 +4,16 @@ var win = Ti.UI.currentWindow;
 function setData(){
 	var db = Titanium.Database.install('../topnotchtrx.sqlite', 'myDB');
 	
-	var rows = db.execute('SELECT * FROM instructors');
+	var instructorID = Ti.UI.currentWindow.instructorID;
+	
+	var workoutsRows = db.execute('SELECT * FROM workouts WHERE iID = '+instructorID);
 	
 	// create the array
 	var dataArray = [];
 	
-	while(rows.isValidRow()){
-		dataArray.push({title:'' + rows.fieldByName('iName') + '', hasChild:true, path:'../main_windows/exersizes.js', inID:'' + rows.fieldByName('iID') +''});
-		rows.next();
+	while(workoutsRows.isValidRow()){
+		dataArray.push({title:'' + workoutsRows.fieldByName('wName') + '', hasChild:true, path:'../main_windows/workout.js', woID:'' + workoutsRows.fieldByName('wID') +''});
+		workoutsRows.next();
 	}
 	// set the array to the tableView
 	tableview.setData(dataArray);
@@ -27,11 +29,11 @@ tableview.addEventListener('click', function(e)
 	{
 		var win = Ti.UI.createWindow({
 			url:e.rowData.path,
-			title:'Exersize with '+e.rowData.title
+			title:'Work out with '+e.rowData.title
 		});
 		
-		var instructorID = e.rowData.inID;
-		win.instructorID = instructorID;
+		var workoutID = e.rowData.woID;
+		win.workoutID = workoutID;
 		
 		Ti.UI.currentTab.open(win);
 	}
