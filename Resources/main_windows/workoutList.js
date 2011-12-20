@@ -29,7 +29,7 @@ tableview.addEventListener('click', function(e)
 	{
 		var win = Ti.UI.createWindow({
 			url:e.rowData.path,
-			title:'Work out with '+e.rowData.title
+			title:'Workout with '+e.rowData.title
 		});
 		
 		var workoutID = e.rowData.woID;
